@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+
+/**
+    Layout 布局
+**/
+
+
+.erp-header-layout{
+    background: #1E9FFF;
+    padding:0;
+}
+.erp-header-layout>.el-row--flex{
+    height:60px;
+}
+.erp-header-logo{
+    height: 60px;
+    line-height:60px;
+    color:#fff;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: hsla(62,77%,76%,.3);
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+.erp-menu-switch{
+    padding: 0 23px;
+    width: 14px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    color:#ffffff;
+}
+.erp-header-layout,.erp-container-main{
+    min-width:1000px;
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+.erp-header-right-tools{
+    height:60px;
+    line-height: 60px;
+    flex: 1;
+    text-align: right;
+    padding: 0 20px;
+    color:#fff;
+}
+.erp-aside-layout,.erp-header-logo{
+    width:175px;
+}
+.erp-aside-layout,.el-menu--collapse{
+    height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.el-menu .fa{
+    font-size:18px;
+}
+
+.erp-breadcrumv-layout{
+    background-color:#ffffff;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d8dce5;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12), 0 0 3px 0 rgba(0,0,0,.04);
+    padding:0 20px;
+}
+
+.erp-content-layout{
+   
+}
+.erp-layout-min-width{
+    min-width:1000px;
+}
+.box-align {
+    -webkit-box-align: center;
+    box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .box-pack {
+    -webkit-box-pack: center;
+    box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+
+  
+/**
+    路由切换动画
+**/
+
+.component-fade-enter-active, .component-fade-leave-active {
+    transition: opacity .3s ease;
+  }
+  .component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active for below version 2.1.8 */ {
+    opacity: 0;
+  }
+
+  /**
+    面包屑动画
+  **/
+  .breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
