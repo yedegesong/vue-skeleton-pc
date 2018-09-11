@@ -1,0 +1,2 @@
+webpackJsonp([2],{"58Pd":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticStyle:{height:"750px"}},[this._v("\n  订单服务 -> farePayment\n")])},staticRenderFns:[]},a=n("VU/8")({name:"FarePaymentController",methods:{data:function(){return{}}}},r,!1,null,null,null);t.default=a.exports}});
+//# sourceMappingURL=2.da391d10b56dce50c0f8.js.map
