@@ -4,6 +4,7 @@ const AppController = () => import('@/controller/AppController.vue');
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',

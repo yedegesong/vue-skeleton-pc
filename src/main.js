@@ -10,7 +10,8 @@ import '@/assets/styles/content.css';
 import '@/assets/font-awesome/css/font-awesome.css'
 
 Vue.use(ElementUI);
-Vue.config.productionTip = false
+Vue.config.productionTip = process.env
+console.log(Vue.config.productionTip)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
